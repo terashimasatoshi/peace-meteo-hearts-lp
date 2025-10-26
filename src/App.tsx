@@ -8,28 +8,22 @@ import heroImage from "figma:asset/15dc1346a5b2ea43e12924c729b25e2fe2000175.png"
 // 📸 Before/After画像の設定（Googleドライブ）
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 
-// 【Googleドライブの画像リンクの使い方】
+// 【修正済み】Google Drive画像を表示するための最適なURL形式
 // 
-// 1. Googleドライブで画像を右クリック→「共有」→「リンクを取得」
-// 2. 共有リンクは以下のような形式です：
-//    https://drive.google.com/file/d/FILE_ID/view?usp=sharing
+// ファイルID:
+// - Before画像: 1ZjAVFb2X1IPOBx7Ui-IVVxRlbGeS4Xm-
+// - After画像: 19KF2iedIuPEDQkAE24omUcA4jCVsxneA
 // 
-// 3. FILE_ID部分（/d/ と /view の間）をコピーして、
-//    以下の変数の id= の後に貼り付けてください
-// 
-// 例：共有リンクが https://drive.google.com/file/d/1ZjAVFb2X1IPOBx7Ui-IVVxRlbGeS4Xm-/view?usp=sharing
-//    ↓
-//    FILE_IDは「1ZjAVFb2X1IPOBx7Ui-IVVxRlbGeS4Xm-」
-//    ↓
-//    const beforeImage = "https://drive.google.com/uc?export=view&id=1ZjAVFb2X1IPOBx7Ui-IVVxRlbGeS4Xm-";
+// 使用している形式: https://lh3.googleusercontent.com/d/FILE_ID
+// この形式はGoogleの画像配信サーバー直接アクセスで最も確実です
 // 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // Before画像（施術前）のGoogleドライブURL
-const beforeImage = "https://drive.google.com/file/d/1ZjAVFb2X1IPOBx7Ui-IVVxRlbGeS4Xm-/view";
+const beforeImage = "https://lh3.googleusercontent.com/d/1ZjAVFb2X1IPOBx7Ui-IVVxRlbGeS4Xm-";
 
 // After画像（施術後）のGoogleドライブURL
-const afterImage = "https://drive.google.com/file/d/19KF2iedIuPEDQkAE24omUcA4jCVsxneA/view?usp=drive_link";
+const afterImage = "https://lh3.googleusercontent.com/d/19KF2iedIuPEDQkAE24omUcA4jCVsxneA";
 
 export default function App() {
   return (
